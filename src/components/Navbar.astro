@@ -1,0 +1,64 @@
+---
+---
+<header class="shadow-md">
+    <nav class="container mx-auto p-4 flex justify-between items-center pl-[8%]">
+      <div class="text-2xl font-bold">
+        <img src="../../src/assets/images/Logo.png" alt="Logotipo de Paradigma Seeds" class="w-[60%] h-[60%]" />
+      </div>
+  
+      <div class="md:hidden">
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <label for="menu-toggle" class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </label>
+  
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 p-4 absolute left-0 right-0 shadow-md bg-white z-10">
+          <li><a href="#nosotros" class="text-gray-100 hover:text-blue-500 font-bold">Nosotros</a></li>
+          <li><a href="#servicios" class="text-gray-100 hover:text-blue-500 font-bold">Servicios</a></li>
+          <li><a href="#contacto" class="text-gray-100 hover:text-blue-500 font-bold">Contacto</a></li>
+        </ul>
+      </div>
+  
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#nosotros" class="text-gray-100 hover:text-gray-500 font-bold">Nosotros</a></li>
+        <li><a href="#servicios" class="text-gray-100 hover:text-gray-500 font-bold">Servicios</a></li>
+        <li><a href="#contacto" class="text-gray-100 hover:text-gray-500 font-bold">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="flex items-start justify-end min-h-screen w-full text-white">
+    <div class="flex flex-col md:flex-row items-start justify-end gap-[10%] max-w-screen-xl pl-[5%] py-16">
+      <div class="w-full md:w-1/2 space-y-4">
+        <h1 class="text-[150%] md:text-[350%] sm:text-[200%] xl:text-[350%] font-semibold leading-[150%] w-[80%] tracking-[-1.1%] text-left not-italic">
+          Bienvenidos a Paradigma Seeds
+        </h1>
+        <p class="text-[125%] w-[60%] leading-[100%] tracking-[0%] text-left not-italic font-medium">
+          Investigación y desarrollo de Cannabis
+        </p>
+        <div class="flex space-x-4 mt-6">
+          <a href="#servicios" class="border border-customYellow text-customYellow px-4 py-2 rounded font-bold  hover:bg-gray-700 active:border-yellow-200">
+            Ver Servicios
+          </a>
+          <a href="#contacto" class="bg-customYellow text-black px-4 py-2 rounded font-bold  hover:opacity-90 active:bg-yellow-200 not-italic">
+            Contactar
+          </a>
+        </div>
+      </div>
+      <!-- Sección de imagen -->
+       
+      <div class="w-full md:w-1/2 flex justify-end">
+        <img src="../../src/assets/images/PSsinfondo2.png" alt="Descripción de la imagen" class="w-[90%] h-[90%] rounded-lg shadow-lg object-cover" />
+      </div>
+    </div>
+  </section>
+  
+  
+  <style>
+    #menu-toggle:checked ~ #mobile-menu {
+      display: flex;
+    }
+  </style>
+  

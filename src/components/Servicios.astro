@@ -1,0 +1,43 @@
+---
+const servicios = [
+  {
+    titulo: "Asesoramiento",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, provident eaque odio facilis aperiam ipsa quaerat vitae tempore sunt laboriosam! Autem, modi debitis? Sunt placeat vel officiis doloribus molestiae numquam?",
+    imagen: "../../src/assets/images/Frame4.png"
+  },
+  {
+    titulo: "Venta",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, provident eaque odio facilis aperiam ipsa quaerat vitae tempore sunt laboriosam! Autem, modi debitis? Sunt placeat vel officiis doloribus molestiae numquam?",
+    imagen: "../../src/assets/images/ventas.jpg"
+  },
+  {
+    titulo: "Postventa",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, provident eaque odio facilis aperiam ipsa quaerat vitae tempore sunt laboriosam! Autem, modi debitis? Sunt placeat vel officiis doloribus molestiae numquam?",
+    imagen: "../../src/assets/images/postventa.jpg"
+  }
+];
+---
+
+<section id="servicios" class="bg-black text-white  h-screen py-10">
+  <!-- Título centrado -->
+  <div class="text-center ">
+    <h2 class="text-white text-4xl font-bold mb-10">Nuestros servicios</h2>
+  </div>
+
+  <!-- Contenedor de las cards -->
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-10 h-[80%]">
+    {servicios.map(servicio => (
+      <div class="relative bg-cover bg-center rounded-[10%] shadow-lg pt-5 px-9 border border-customYellow" style="background-image: url('../../src/assets/images/Frame49.jpg'); background-size: cover; background-position: center;"
+           style={`background-image: url('${servicio.imagen}'); background-size: cover;`}>
+        {/* <div class="absolute inset-0 bg-black bg-opacity-50 rounded-full"></div> */}
+        <div class="relative z-10 text-center">
+          <h3 class="text-xl md:text-2xl font-bold mb-4">{servicio.titulo}</h3>
+          <p class="text-sm md:text-base leading-relaxed">
+            {servicio.descripcion}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+

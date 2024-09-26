@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .placeholder-white::placeholder {
+    @apply text-white; /* Aplica el color blanco al placeholder */
+  }
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+body,
+p,
+a {
+  font-style: normal; /* Asegura que el estilo sea normal */
+}
