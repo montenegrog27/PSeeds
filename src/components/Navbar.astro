@@ -1,10 +1,15 @@
 ---
 ---
 <header class="shadow-md">
-    <nav class="container mx-auto p-4 flex justify-between items-center pl-[8%]">
+    <nav class="container mx-auto p-4 flex justify-between items-center pl-[8%] px-5 md:px-0">
       <div class="text-2xl font-bold">
-        <img src="https://res.cloudinary.com/dsbrnqc5z/image/upload/v1727390894/images/Logo_lkdzsg.png" alt="Logotipo de Paradigma Seeds" class="w-[60%] h-[60%]" />
+        <!-- Logotipo para desktop -->
+        <img src="https://res.cloudinary.com/dsbrnqc5z/image/upload/v1727390894/images/Logo_lkdzsg.png" alt="Logotipo de Paradigma Seeds Desktop" class="w-[60%] h-[60%] hidden md:block" />
+      
+        <!-- Logotipo para mobile -->
+        <img src="https://res.cloudinary.com/dsbrnqc5z/image/upload/v1727392658/images/PS_simbolo_blanco_Preferente_o7ilqx.png" alt="Logotipo de Paradigma Seeds Mobile" class="w-[75%] h-[75%] block md:hidden" />
       </div>
+      
   
       <div class="md:hidden">
         <input type="checkbox" id="menu-toggle" class="hidden" />
@@ -29,8 +34,8 @@
     </nav>
   </header>
   
-  <section class="flex items-start justify-end min-h-screen w-full text-white">
-    <div class="flex flex-col md:flex-row items-start justify-end gap-[15%] md:gap-[10%] max-w-screen-xl pl-[5%] py-16">
+  <section class="flex items-start justify-center max-h-screen w-full text-white px-5 md:px-0">
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-end gap-[5%] md:gap-[10%] max-w-screen-xl pl-[5%] py-5 md:py-16 ">
       <div class="w-full md:w-1/2 space-y-4">
         <h1 class="text-[200%] md:text-[350%] sm:text-[200%] xl:text-[350%] font-semibold leading-[150%] w-[80%] tracking-[-1.1%] text-left not-italic">
           Bienvenidos a Paradigma Seeds
@@ -49,7 +54,7 @@
       </div>
       <!-- Sección de imagen -->
        
-      <div class="w-full md:w-1/2 flex justify-end">
+      <div class="w-full md:w-1/2 flex justify-center md:justfity-end">
         <img src="https://res.cloudinary.com/dsbrnqc5z/image/upload/v1727390896/images/PSsinfondo2_j68epl.png" alt="Descripción de la imagen" class="w-[90%] h-[90%] rounded-lg shadow-lg object-cover" />
       </div>
     </div>
